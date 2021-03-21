@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    to_sentence_exclusive (0.1.0)
+    to_sentence_exclusive (1.0.0)
       rails (>= 4.0)
 
 GEM
