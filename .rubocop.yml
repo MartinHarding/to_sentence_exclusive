@@ -1,32 +1,36 @@
-AllCops:
-  TargetRubyVersion: 2.4
-  NewCops: enable
+inherit_gem:
+  rubocop-rails_config:
+    - config/rails.yml
 
-Style/WordArray:
-  Enabled: false
+# AllCops:
+#   TargetRubyVersion: 2.6
+#   NewCops: enable
 
-Style/RedundantInterpolation:
-  Enabled: false
+# Style/WordArray:
+#   Enabled: false
 
-Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: double_quotes
+# Style/RedundantInterpolation:
+#   Enabled: false
 
-Style/StringLiteralsInInterpolation:
-  Enabled: true
-  EnforcedStyle: double_quotes
+# Style/StringLiterals:
+#   Enabled: true
+#   EnforcedStyle: double_quotes
 
-Layout/LineLength:
-  Max: 120
+# Style/StringLiteralsInInterpolation:
+#   Enabled: true
+#   EnforcedStyle: double_quotes
 
-Metrics/BlockLength:
-  Enabled: false
+# Layout/LineLength:
+#   Max: 120
 
-Metrics/MethodLength:
-  Enabled: false
+# Metrics/BlockLength:
+#   Enabled: false
 
-Style/FrozenStringLiteralComment:
-  Enabled: false
+# Metrics/MethodLength:
+#   Enabled: false
 
-Layout/HashAlignment:
-  Enabled: false
+# Style/FrozenStringLiteralComment:
+#   Enabled: false
+
+# Layout/HashAlignment:
+#   Enabled: false

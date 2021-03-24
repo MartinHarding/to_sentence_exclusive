@@ -1,7 +1,8 @@
-require "active_support/core_ext/hash"
+# frozen_string_literal: true
 
 module ToSentenceExclusive
   module ArrayExtensions
+    # Copied primarily from activesupport/lib/active_support/core_ext/array/conversions.rb, line 61
     def to_sentence_exclusive(options = {})
       valid_keys = [:words_connector, :two_words_connector, :last_word_connector, :locale]
       options.each_key do |k|
