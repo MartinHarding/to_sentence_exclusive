@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     to_sentence_exclusive (1.0.0)
-      rails (>= 4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -178,4 +177,4 @@ DEPENDENCIES
   to_sentence_exclusive!
 
 BUNDLED WITH
-   2.2.14
+   2.2.15

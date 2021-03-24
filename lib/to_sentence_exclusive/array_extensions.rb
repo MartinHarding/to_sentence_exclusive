@@ -3,7 +3,12 @@ require "active_support/core_ext/hash"
 module ToSentenceExclusive
   module ArrayExtensions
     def to_sentence_exclusive(options = {})
-      options.assert_valid_keys(:words_connector, :two_words_connector, :last_word_connector, :locale)
+      valid_keys = [:words_connector, :two_words_connector, :last_word_connector, :locale]
+      options.each_key do |k|
+        unless valid_keys.include?(k)
+          raise ArgumentError.new("Unknown key: #{k.inspect}. Valid keys are: #{valid_keys.map(&:inspect).join(', ')}")
+        end
+      end
 
       default_connectors = {
         words_connector: ", ",
