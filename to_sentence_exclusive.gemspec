@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["martin@martinharding.com"]
 
   spec.summary       = "Convert arrays to sentences as an exclusive list."
-  spec.description   = "Converts the array to a comma-separated sentence where the last element is joined by the connector word."
+  spec.description   = "Converts the array to a comma-separated sentence where the last element is joined by the connector word, defaulting to an exclusive sentence structure (\"one, two, or three\" as opposed to \"one, two, and three\")."
   spec.homepage      = "https://github.com/martinharding/to_sentence_exclusive"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
